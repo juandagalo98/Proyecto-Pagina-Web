@@ -1,0 +1,241 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos del header */
+.header {
+  position: relative; /* Para que el posicionamiento sea relativo a este elemento */
+  font-size: 14px;
+  background-image: url(img/header.jpg); /* Ruta a la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+  background-position: center; /* Centra la imagen en el header */
+  height: 400px; /* Altura del header */
+  color: white; /* Color del texto para asegurarse de que es legible */
+  display: flex; /* Para centrar el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: left; /* Centra horizontalmente el contenido */
+  text-align: left; /* Centra el texto */
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  position: absolute; /* Posicionamiento absoluto para colocarla encima de la imagen */
+  bottom: 0; /* La barra de navegación se coloca al fondo del contenedor de la imagen */
+  left: 0; /* La barra de navegación se coloca en el borde izquierdo del contenedor */
+  width: 96%; /* La barra de navegación ocupa todo el ancho del contenedor */
+  background-color: #763490;
+  padding: 20px;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Alinea los elementos a la izquierda */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px; /* Espacio entre elementos de la lista */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: #111;
+  color: white;
+}
+
+.center-text {
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Alinea las secciones al inicio del contenedor */
+}
+
+#left-section {
+  flex: 1; /* Cada sección ocupa el mismo espacio */
+  padding: 20px;
+}
+
+#left-section img {
+  float: left;
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+#right-section {
+  flex: 1; /* Cada sección ocupa el mismo espacio */
+  padding: 20px;
+}
+
+.divider {
+  width: 5px;
+  background-color: #000; /* Color de la línea divisoria */
+  margin: 20px 0; /* Espaciado entre las secciones y la línea */
+}
+
+.left-text {
+  text-align: left;
+}
+
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#services .fa-solid {
+  color: rgb(135, 28, 236); /* Cambia a cualquier color que desees */
+  font-size: 35px;
+  border-radius: 50%;
+}
+
+#services article {
+  flex: 1 1 30%; /* Ajusta el tamaño según sea necesario */
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+
+#services h2.center-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#portfolio h2.center-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#portfolio {
+  padding: 20px;
+  text-align: center;
+  background-color: #ccc;
+}
+
+#portfolio .center-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#portfolio .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+#portfolio img {
+  margin: 10px;
+  max-width: 100%; /* Para hacer que las imágenes sean responsivas */
+  height: auto; /* Para mantener la proporción de las imágenes */
+}
+
+#location {
+  padding: 0%;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 40vh; /* Altura del contenedor padre para ocupar toda la pantalla */
+  margin: 0; /* Elimina cualquier margen */
+}
+
+.map-container {
+  width: 100%; /* Ajusta el ancho según necesites */
+  max-width: 400px; /* Ancho máximo para el mapa */
+  height: 400px; /* Altura igual al ancho para hacer el contenedor cuadrado */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  border-radius: 50%;
+  overflow: hidden; /* Oculta el contenido que se sale del borde redondeado */
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  position: absolute; /* Asegura que el iframe ocupe todo el contenedor */
+  top: 0;
+  left: 0;
+  border-radius: 50%; /* Aplica el borde redondeado al iframe también */
+  }
+
+  
+#email {
+  background-image: url(img/map-image.png);
+  background-color: rgb(135, 28, 236);
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen */
+  padding: 0;
+  text-align: center;
+  color: white; /* Color del texto para contrastar con el fondo */
+  margin: 0; /* Elimina cualquier margen */
+}
+
+#email form {
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del formulario */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#email form label,
+#email form input,
+#email form textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#email form textarea {
+  height: 100px; /* Altura del campo de texto */
+}
+
+#footer {
+  background-color: #763490;
+  text-align: right;
+  margin: 0;
+  padding: 0; /* Elimina cualquier padding */
+  font-size: 20px;
+}
+
+.right-text {
+  text-align:right;
+  }

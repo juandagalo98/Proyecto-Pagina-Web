@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Business Webpage</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .main-container {
+            max-width: 1024px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header, footer {
+            text-align: center;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .left-text {
+            text-align: left;
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .divider {
+            width: 2px;
+            background: #ccc;
+        }
+        section, aside {
+            margin-bottom: 20px;
+        }
+        form input, form textarea {
+            display: block;
+            width: calc(100% - 20px);
+            margin: 10px 0;
+            padding: 10px;
+        }
+        form button {
+            display: block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h1>My Business Webpage</h1>
+            <nav>
+                <ul>
+                    <li><a href="#who-we-are">Who we are?</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#email">Email Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="who-we-are">
+                <h2 class="center-text">Who We Are?</h2>
+                <p class="center-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+                Mauris convallis magna sit amet diam euismod malesuada.
+                </p>
+            </section>
+            <div class="container">
+                <section id="left-section">
+                    <h2 class="left-text">Lorem ipsum</h2>
+                    <p class="left-text">
+                        <img src="img/1.jpg" alt="Image" width="200" height="200">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada. Vestibulum metus tellus,
+                        interdum elementum nisi sed, cursus sodales magna. Proin feugiat fermentum metus. Nam iaculis vel nibh vitae lacinia. Nullam ut ante id tortor lobortis convallis ut
+                        tempus tortor. Interdum et
+                        malesuada fames ac ante ipsum primis in faucibus. Praesent congue varius justo, id molestie nibh sagittis et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada. Vestibulum metus tellus, interdum elementum nisi sed, cursus sodales magna. Proin feugiat fermentum metus. Nam iaculis vel nibh vitae lacinia. Nullam ut ante id tortor lobortis convallis ut tempus tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent congue varius justo, id molestie nibh sagittis et.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada. Vestibulum metus tellus, interdum elementum nisi sed, cursus sodales magna. Proin feugiat fermentum metus. Nam iaculis vel nibh vitae lacinia. Nullam ut ante id tortor lobortis convallis ut tempus tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent congue varius justo, id molestie nibh sagittis et.
+                    </p>
+                </section>
+
+                <div class="divider"></div>
+
+                <section id="right-section">
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada. Vestibulum metus tellus,
+                        interdum elementum nisi sed, cursus sodales magna. Proin feugiat fermentum metus. Nam iaculis vel nibh vitae lacinia. Nullam ut ante id tortor lobortis convallis ut
+                        tempus tortor.
+                        <img src="img/ad.png" alt="imagen" width="400" height="100">
+                    </p>
+
+                    <h2>Lorem ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada. Vestibulum metus tellus,
+                        interdum elementum nisi sed, cursus sodales magna. Proin feugiat fermentum metus. Nam iaculis vel nibh vitae lacinia. Nullam ut ante id tortor lobortis convallis ut
+                        tempus tortor. Interdum et
+                        malesuada fames ac ante ipsum primis in faucibus.</p>
+                </section>
+            </div>
+
+            <aside><p>Buy Cheap Beer <a href="https://www.here.com">here</a>.</p></aside>
+
+            <hr>
+
+            <section id="services">
+                <h2 class="center-text">Our Services</h2>
+                <article>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada.</p>
+                </article>
+
+                <article>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h3>Service 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada.</p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Service 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada.</p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h3>Service 4</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada.</p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-flag"></i>
+                    <h3>Service 5</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada.</p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Service 6</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis magna sit amet diam euismod malesuada.</p>
+                </article>
+            </section>
+
+            <section id="portfolio">
+                <h2 class="center-text"> <b> Portfolio </b> </h2>
+                <p class="center-text">There are success projects created by us</p>
+                <img src="img/2.jpg" alt="Project 2" width="200" height="200">
+                <img src="img/3.jpg" alt="Project 3" width="200" height="200">
+                <img src="img/4.jpg" alt="Project 4" width="200" height="200"><br>
+                <img src="img/5.jpg" alt="Project 5" width="200" height="200">
+                <img src="img/6.jpg" alt="Project 6" width="200" height="200">
+                <img src="img/7.jpg" alt="Project 7" width="200" height="200"><br>
+                <img src="img/8.jpg" alt="Project 8" width="200" height="200">
+                <img src="img/9.jpg" alt="Project 9" width="200" height="200">
+                <img src="img/10.jpg" alt="Project 10" width="200" height="200">
+            </section>
+
+            <section id="location">
+                <h2 class="center-text">Location</h2>
+                <p class="center-text">You can find us:</p>
+
+
+         <div class="container">
+            <section id="left-section">
+                <h3 class="left-text">Head Office</h3>
+                <p class="left-text">123456 Blank Street <br>
+                    Phone: <a href="https://www.here.com">2456-134-321</a> <br>
+                    Email Address: <a href="https://www.here.com">info@domain.com</a> <br>
+                </p>
+            </section>
+
+
+                <div class="divider"></div>
+           
+
+            <section id="right-section">
+                <h3>Emea</h3>
+                <p>Carrer de Sant Joan de la Salle, 42 <br>
+                    08022 Barcelona<br> 
+                    Phone:  <a href="https://www.here.com">932 902 474</a> <br> 
+                    Email Address: <a href="https://www.here.com">info@salleurl.edu</a>
+                </p>
+            </section>
+        </div>
+                <div class="parent-container">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.9935239217296!2d2.1260732152974164!3d41.40368027926278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4987fd7fb9a5b%3A0x111f4b4c57b6a6c3!2sCarrer%20de%20Sant%20Joan%20de%20la%20Salle%2C%2042%2C%2008022%20Barcelona!5e0!3m2!1ses!2ses!4v1625848693870!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                </div>
+                
+            </section>
+
+            <section class="email" id="email">
+                <h2 class="center-text">Email Us</h2>
+
+                <form class="center-text" action="/route" method="post">
+                    <label for="name">Name* </label>
+                    <input type="text" name="name" id="name" required> <br>
+
+                    <label for="email">Email*</label>
+                    <input type="text" name="email" id="email" required> <br>
+
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone"> <br>
+
+                    <label for="company_name">Company Name: </label>
+                    <input type="text" name="company_name" id="company_name"> <br>
+
+                    <label for="subject">Subject* </label>
+                    <input type="text" name="subject" id="subject" required> <br>
+
+                    <label for="message">Message*: </label>
+                    <textarea name="message" id="message" rows="4" cols="50" required></textarea> <br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer" class="rigth-text">
+            <p>2016 - <a href="https://www.salleurl.edu/ca">LaSalle.</a> LaSalle. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
