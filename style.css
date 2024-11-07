@@ -5,12 +5,18 @@ body {
   display: flex;
   justify-content: center;
 }
+.main-container {
+
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 /* Estilos del header */
 .header {
   position: relative; /* Para que el posicionamiento sea relativo a este elemento */
-  font-size: 14px;
-  background-image: url(img/header.jpg); /* Ruta a la imagen */
+  font-size: 20px;
+  background-image: url("https://images6.alphacoders.com/127/1271722.jpg"); /* Ruta a la imagen */
   background-size: cover; /* Ajusta la imagen para cubrir todo el header */
   background-position: center; /* Centra la imagen en el header */
   height: 400px; /* Altura del header */
@@ -20,7 +26,6 @@ body {
   justify-content: left; /* Centra horizontalmente el contenido */
   text-align: left; /* Centra el texto */
   padding-left: 20px;
-  margin: 0;
 }
 
 /* Estilos de la barra de navegación */
@@ -28,10 +33,14 @@ nav {
   position: absolute; /* Posicionamiento absoluto para colocarla encima de la imagen */
   bottom: 0; /* La barra de navegación se coloca al fondo del contenedor de la imagen */
   left: 0; /* La barra de navegación se coloca en el borde izquierdo del contenedor */
-  width: 96%; /* La barra de navegación ocupa todo el ancho del contenedor */
-  background-color: #763490;
+  width: 100%; /* La barra de navegación ocupa todo el ancho del contenedor */
+  background-color: #a97c09;
   padding: 20px;
   color: white;
+  margin: none;
+  box-sizing: border-box;
+  font-weight: bold;
+
 }
 
 nav ul {
@@ -109,7 +118,7 @@ main {
 }
 
 #services .fa-solid {
-  color: rgb(135, 28, 236); /* Cambia a cualquier color que desees */
+  color: #a97c09; /* Cambia a cualquier color que desees */
   font-size: 35px;
   border-radius: 50%;
 }
@@ -141,6 +150,9 @@ main {
   padding: 20px;
   text-align: center;
   background-color: #ccc;
+  max-width: 100%;
+  margin-bottom: 50px;
+  
 }
 
 #portfolio .center-text {
@@ -150,92 +162,182 @@ main {
 
 #portfolio .image-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Espacio entre las imágenes */
-}
-
-#portfolio img {
-  margin: 10px;
-  max-width: 100%; /* Para hacer que las imágenes sean responsivas */
-  height: auto; /* Para mantener la proporción de las imágenes */
-}
-
-#location {
-  padding: 0%;
-}
-
-.parent-container {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 40vh; /* Altura del contenedor padre para ocupar toda la pantalla */
-  margin: 0; /* Elimina cualquier margen */
-}
-
-.map-container {
-  width: 100%; /* Ajusta el ancho según necesites */
-  max-width: 400px; /* Ancho máximo para el mapa */
-  height: 400px; /* Altura igual al ancho para hacer el contenedor cuadrado */
-  margin: 0 auto; /* Centra el contenedor en la página */
-  position: relative;
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  border-radius: 50%;
-  overflow: hidden; /* Oculta el contenido que se sale del borde redondeado */
-}
-.map-container iframe {
+  flex-wrap: wrap;       /* Permite que las imágenes se envuelvan en múltiples filas */
+  gap: 20px;             /* Espacio entre cada imagen */
+  justify-content: center; /* Centra las imágenes */
   width: 100%;
-  height: 100%;
-  border: 0;
-  position: absolute; /* Asegura que el iframe ocupe todo el contenedor */
-  top: 0;
-  left: 0;
-  border-radius: 50%; /* Aplica el borde redondeado al iframe también */
-  }
-
   
-#email {
-  background-image: url(img/map-image.png);
-  background-color: rgb(135, 28, 236);
-  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-  background-position: center; /* Centra la imagen */
-  padding: 0;
-  text-align: center;
-  color: white; /* Color del texto para contrastar con el fondo */
-  margin: 0; /* Elimina cualquier margen */
 }
 
-#email form {
-  max-width: 600px; /* Ancho máximo del formulario */
-  margin: 0 auto; /* Centra el formulario horizontalmente */
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejorar la legibilidad del formulario */
-  padding: 20px;
+.image-container img {
+  width: 33.33%;
+  height: 200px;
+  object-fit: cover;
+}
+
+p {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 10px; /* Espacio interno en el párrafo */
+  font-size: 16px; /* Tamaño de fuente del párrafo */
+}
+
+#wheater {
+  display: flex;  /* Aplica Flexbox */
+  flex-direction: column;
+  justify-content: center;  /* Centra el contenido horizontalmente */
+  align-items: center;  /* Centra el contenido verticalmente */
+  height: 50vh;  /* Hace que la sección ocupe toda la altura de la ventana */
+  background-image: url('https://www.weathercompany.com/wp-content/uploads/2024/02/hero-sky-dramatic-lightning-weather-shutterstock_2200924189.jpg');
+  background-size: cover;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-family:sans-serif;
+  font-size: 25px;
+  color: #ccc;
+  border: none;
+;
+}
+
+.widget-container {
+  border-radius: 15px;
+   
+
+}
+
+#horaActual {
+  padding: 20px 25px;
+  font-family:sans-serif;
+  font-size: 25px;
+  font-weight: bolder; 
+}
+
+
+.weatherwidget-io {
+  width: 605px;
+  text-align: center;  /* Centra el texto dentro del enlace */
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+   
+}
+
+#data {
+  background-image: url("https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/16013556/shutterstock_785442694.jpg?quality=90&strip=all&crop=7.0163730803975%2C0%2C85.967253839205%2C100&w=1200");
+  background-size: cover;
+  background-position: center;
+  padding: 25px;
+  font-size: 1rem;
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 800px; /* Máximo ancho del formulario */
+  background-color: rgba(81, 81, 93, 0.7);
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+form {
+  width: 100%;
+  max-width: 100%; /* Asegura que el formulario ocupe todo el ancho disponible */
+  margin: 0 auto; /* Centra el formulario */
+ 
+}
+
+.form-group {
+  margin-bottom: 2px;
+  padding: 0.30rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 5px;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+  display: block;
   border-radius: 10px;
 }
 
-#email form label,
-#email form input,
-#email form textarea {
+.input-textarea {
   display: block;
-  margin-bottom: 10px;
+  margin: 10px 0;
   width: 100%;
-  box-sizing: border-box;
+  padding: 0.75rem;
+  background-color: #a97c09;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  border: none;
 }
 
-#email form textarea {
-  height: 100px; /* Altura del campo de texto */
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  form {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .form-control {
+    height: 2rem;
+  }
+
+  textarea {
+    height: 3rem;
+  }
+
+  .input-textarea {
+    padding: 0.5rem;
+    width: 100%;
+  }
 }
+
+
 
 #footer {
-  background-color: #763490;
+  background-color: #a97c09;
   text-align: right;
   margin: 0;
   padding: 0; /* Elimina cualquier padding */
   font-size: 20px;
 }
 
-.right-text {
-  text-align:right;
-  }
+a {
+  color: black;  /* Color del enlace en su estado normal */
+  text-decoration: none;  /* Elimina el subrayado del enlace */
+}
+
+a:visited {
+  color: black;  /* Color del enlace después de haber sido visitado */
+}
+
