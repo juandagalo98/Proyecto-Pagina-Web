@@ -1,14 +1,50 @@
+
+/* Variables para el modo claro */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary-color:#ffffff;
+}
+
+/* Variables para el modo oscuro */
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+  --primary-color: #1e1e1e;;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0 auto;
   max-width: 1024px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
 
 }
+
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
 .main-container {
 
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
 }
 
 /* Estilos del header */
@@ -149,7 +185,7 @@ main {
   padding: 50px;
   padding-top: 20px;
   text-align: center;
-  background-color: #ccc;
+  
   max-width: 100%;
   margin-bottom: 30px;
   margin-top: 40px;
@@ -174,6 +210,7 @@ main {
   width: 33.33%;
   height: 200px;
   object-fit: cover;
+
 }
 
 p {
@@ -298,7 +335,7 @@ textarea {
 }
 
 /* Media queries para pantallas pequeñas */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   body {
     margin: 10px;
     font-size: 0.9rem;
@@ -341,4 +378,6 @@ a {
 a:visited {
   color: black;  /* Color del enlace después de haber sido visitado */
 }
+
+
 

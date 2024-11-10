@@ -63,3 +63,11 @@ setInterval(mostrarHoraLocal, 1000);
     }
 }(document, 'script', 'weatherwidget-io-js');
 
+
+
+
+// Alternar modo oscuro 
+
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
